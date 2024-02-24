@@ -57,21 +57,8 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Box ml={{ base: 0, md: 60 }} transition=".3s ease">
-        {/* Main Content goes here */}
-        <VStack spacing={4} p={8}>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />}>
-            Section 1
-          </Button>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaUser />}>
-            Section 2
-          </Button>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaCog />}>
-            Section 3
-          </Button>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />}>
-            Section 4
-          </Button>
+      <Flex direction={{ base: "column", md: "row" }} transition=".3s ease">
+        <VStack spacing={4} p={8} flex="2">
           <Box id="section1" p={5} shadow="md" borderWidth="1px">
             <Heading size="md">Section 1</Heading>
             <Text mt={4}>Content for section 1...</Text>
@@ -92,9 +79,25 @@ const Index = () => {
             <Heading size="md">Section 5</Heading>
             <Text mt={4}>Content for section 5...</Text>
           </Box>
-          {/* Scrollspy can be tested with these sections */}
         </VStack>
-      </Box>
+        <VStack spacing={4} p={8} flex="1" alignItems="flex-start">
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />} onClick={() => document.getElementById("section1").scrollIntoView()}>
+            Section 1
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaUser />} onClick={() => document.getElementById("section2").scrollIntoView()}>
+            Section 2
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaCog />} onClick={() => document.getElementById("section3").scrollIntoView()}>
+            Section 3
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />} onClick={() => document.getElementById("section4").scrollIntoView()}>
+            Section 4
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />} onClick={() => document.getElementById("section5").scrollIntoView()}>
+            Section 5
+          </Button>
+        </VStack>
+      </Flex>
     </>
   );
 };
