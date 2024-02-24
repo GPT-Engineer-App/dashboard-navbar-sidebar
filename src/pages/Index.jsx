@@ -59,10 +59,12 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column-reverse", md: "row-reverse" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
-        {/* Scrollspy component has been removed */}
-        <Box as="main" flex="1" h="500px" overflowY="auto">
-          {/* Main content area is now empty */}
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" px={8}>
+        <Box flex={{ base: "1", md: "8" }} h="500px" overflowY="auto">
+          {/* Left content area */}
+        </Box>
+        <Box flex={{ base: "1", md: "4" }} h="500px" overflowY="auto">
+          {/* Right content area */}
         </Box>
       </Flex>
     </>
