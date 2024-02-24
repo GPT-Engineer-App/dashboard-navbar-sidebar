@@ -81,7 +81,7 @@ const Index = () => {
           </Box>
         </VStack>
         <VStack spacing={4} p={8} flex="1" alignItems="flex-start" position="fixed" right="0" top="75px" h="calc(100vh - 75px)">
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />} onClick={() => document.getElementById("section1").scrollIntoView()}>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />} onClick={() => document.getElementById("section1").scrollIntoView({ behavior: "smooth", block: "start" })}>
             Section 1
           </Button>
           <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaUser />} onClick={() => document.getElementById("section2").scrollIntoView()}>
