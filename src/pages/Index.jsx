@@ -64,34 +64,7 @@ const Index = () => {
           <Scrollspy />
         </Box>
         <Box as="main" flex="1" h="500px" overflowY="auto">
-          {/* Replace these sections with actual content */}
-          <Box id="section1" p={5}>
-            <Heading size="md">Section 1</Heading>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
-          </Box>
-          <Box id="section2" p={5}>
-            <Heading size="md">Section 2</Heading>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis.</p>
-          </Box>
-          <Box id="section3" p={5}>
-            <Heading size="md">Section 3</Heading>
-            <Box id="subsectionA" p={5}>
-              <Heading size="md">Subsection A</Heading>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-            </Box>
-            <Box id="subsectionB" p={5}>
-              <Heading size="md">Subsection B</Heading>
-              <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus.</p>
-            </Box>
-          </Box>
-          <Box id="section4" p={5}>
-            <Heading size="md">Section 4</Heading>
-            <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.</p>
-          </Box>
-          <Box id="section5" p={5}>
-            <Heading size="md">Section 5</Heading>
-            {/* Content for section 5 */}
-          </Box>
+          {/* Main content has been removed as per request */}
         </Box>
       </Flex>
     </>
