@@ -60,25 +60,6 @@ const Index = () => {
       </Drawer>
       <Flex direction={{ base: "column", md: "row-reverse" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
         <Box flex="1" minW="0" order={{ md: 1 }}>
-          <Box as="nav" pos="sticky" left="16px" right="auto" top="120px" w="200px">
-            <VStack align="stretch" spacing={4} fontWeight="semibold">
-              <Link href="#section1" onClick={onClose}>
-                Section 1
-              </Link>
-              <Link href="#section2" onClick={onClose}>
-                Section 2
-              </Link>
-              <Link href="#section3" onClick={onClose}>
-                Section 3
-              </Link>
-              <Link href="#section4" onClick={onClose}>
-                Section 4
-              </Link>
-              <Link href="#section5" onClick={onClose}>
-                Section 5
-              </Link>
-            </VStack>
-          </Box>
           <VStack spacing={8} alignItems="flex-start" id="section1">
             <Heading as="h3" size="lg">
               Section 1
