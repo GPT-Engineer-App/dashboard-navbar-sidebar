@@ -4,7 +4,7 @@ import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun } from "react-
 
 const SidebarContent = ({ onClose, ...rest }) => {
   return (
-    <Box transition="3s ease" bg="blue.800" w={{ base: "full", md: 60 }} pos="fixed" h="full" {...rest}>
+    <Box transition="3s ease" bg="dark" w={{ base: "full", md: 60 }} pos="fixed" h="full" {...rest}>
       <VStack align="flex-start" justify="center" h="100%" p={5} spacing={4} color="white">
         <Heading size="md" my={5}>
           Dashboard
@@ -28,7 +28,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
 
 const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
   return (
-    <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding={6} bg="teal.500" color="white" shadow="md" {...rest}>
+    <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding={6} bg="dark" color="white" shadow="md" {...rest}>
       <IconButton size="md" icon={<FaBars />} aria-label={"Open Menu"} display="inherit" onClick={onOpen} mr={5} />
       <Heading as="h1" size="lg" letterSpacing={"tighter"}>
         React Dashboard
@@ -58,7 +58,7 @@ const Index = () => {
         </DrawerContent>
       </Drawer>
       <Box ml={{ base: 0, md: 60 }} transition=".3s ease">
-        <Flex as="header" align="center" justify="space-between" wrap="wrap" w="100%" mb={8} p={8} bg="blue.800" color="white" shadow="lg">
+        <Flex as="header" align="center" justify="space-between" wrap="wrap" w="100%" mb={8} p={8} bg="dark" color="white" shadow="lg">
           <Text>Welcome to your Dashboard</Text>
           {/* Header Content goes here */}
         </Flex>
