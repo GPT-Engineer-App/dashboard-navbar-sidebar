@@ -80,7 +80,7 @@ const Index = () => {
             <Text mt={4}>Content for section 5...</Text>
           </Box>
         </VStack>
-        <VStack spacing={4} p={8} flex="1" alignItems="flex-start">
+        <VStack spacing={4} p={8} flex="1" alignItems="flex-start" position="fixed">
           <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />} onClick={() => document.getElementById("section1").scrollIntoView()}>
             Section 1
           </Button>
