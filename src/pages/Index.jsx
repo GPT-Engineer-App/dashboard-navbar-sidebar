@@ -30,7 +30,7 @@ const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
   return (
     <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding={6} bg={colorMode === "light" ? "white" : "dark"} color="white" shadow="md" {...rest}>
       <IconButton size="md" icon={<FaBars />} aria-label={"Open Menu"} display="inherit" onClick={onOpen} mr={5} />
-      <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+      <Heading as="h1" size="lg" letterSpacing={"tighter"} color={colorMode === "light" ? "black" : "white"}>
         React Dashboard
       </Heading>
       <Spacer />
