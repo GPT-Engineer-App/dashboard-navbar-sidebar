@@ -63,31 +63,31 @@ const Index = () => {
             <Heading as="h3" size="lg">
               Section 1
             </Heading>
-            <Text fontSize="md">Overview of dashboard's main features and functionalities.</Text>
+            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section2">
             <Heading as="h3" size="lg">
               Section 2
             </Heading>
-            <Text fontSize="md">Dive into user profiles and management of user settings.</Text>
+            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section3">
             <Heading as="h3" size="lg">
               Section 3
             </Heading>
-            <Text fontSize="md">Customization options for users to tailor the dashboard.</Text>
+            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section4">
             <Heading as="h3" size="lg">
               Section 4
             </Heading>
-            <Text fontSize="md">Analytics, reporting, and data visualization insights.</Text>
+            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section5">
             <Heading as="h3" size="lg">
               Section 5
             </Heading>
-            <Text fontSize="md">Resources and documentation for dashboard optimization.</Text>
+            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
