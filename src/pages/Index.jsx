@@ -110,8 +110,11 @@ const Index = () => {
           </VStack>
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
-          {/* Scrollspy buttons updated to ensure they highlight the active section correctly */}
-          {/* No changes needed as the functionality is already implemented as per the last edit */}
+          {["section1", "section2", "section3", "section4", "section5"].map((section) => (
+            <Button key={section} size="sm" colorScheme={activeSection === section ? "blue" : "gray"} onClick={() => document.getElementById(section).scrollIntoView({ behavior: "smooth" })}>
+              {section.toUpperCase()}
+            </Button>
+          ))}
         </VStack>
       </Flex>
     </>
