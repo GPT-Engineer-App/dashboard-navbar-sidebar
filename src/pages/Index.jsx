@@ -1,6 +1,6 @@
 import React from "react";
 import Scrollspy from "../components/Scrollspy";
-import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading, IconButton, Spacer, VStack, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
 import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun, FaBook, FaChartBar, FaUserFriends, FaRegFileAlt } from "react-icons/fa";
 
 const SidebarContent = ({ onClose, colorMode, ...rest }) => {
@@ -60,7 +60,32 @@ const Index = () => {
         </DrawerContent>
       </Drawer>
       <Flex direction={{ base: "column", md: "row" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
-        {/* Content has been deleted as per update request */}
+        <Box as="aside" position="sticky" top="0" h="calc(100vh - 100px)" w="200px" overflowY="auto">
+          <Scrollspy />
+        </Box>
+        <Box as="main" flex="1" h="500px" overflowY="auto">
+          {/* Replace these sections with actual content */}
+          <Box id="section1" p={5}>
+            <Heading size="md">Section 1</Heading>
+            {/* Content for section 1 */}
+          </Box>
+          <Box id="section2" p={5}>
+            <Heading size="md">Section 2</Heading>
+            {/* Content for section 2 */}
+          </Box>
+          <Box id="section3" p={5}>
+            <Heading size="md">Section 3</Heading>
+            {/* Content for section 3 */}
+          </Box>
+          <Box id="section4" p={5}>
+            <Heading size="md">Section 4</Heading>
+            {/* Content for section 4 */}
+          </Box>
+          <Box id="section5" p={5}>
+            <Heading size="md">Section 5</Heading>
+            {/* Content for section 5 */}
+          </Box>
+        </Box>
       </Flex>
     </>
   );
