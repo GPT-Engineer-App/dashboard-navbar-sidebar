@@ -1,5 +1,5 @@
 import React from "react";
-import Scrollspy from "../components/Scrollspy";
+// Scrollspy component import has been removed
 import { Box, Flex, Heading, IconButton, Spacer, VStack, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
 import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun, FaBook, FaChartBar, FaUserFriends, FaRegFileAlt } from "react-icons/fa";
 
@@ -60,9 +60,7 @@ const Index = () => {
         </DrawerContent>
       </Drawer>
       <Flex direction={{ base: "column-reverse", md: "row-reverse" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
-        <Box as="aside" position="sticky" top="0" h="calc(100vh - 100px)" w="200px" overflowY="auto" order={{ base: 1, md: 2 }}>
-          <Scrollspy />
-        </Box>
+        {/* Scrollspy component has been removed */}
         <Box as="main" flex="1" h="500px" overflowY="auto">
           {/* Main content area is now empty */}
         </Box>
