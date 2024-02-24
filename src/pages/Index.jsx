@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button } from "@chakra-ui/react";
-import { FaBars, FaHome, FaUser, FaCog, FaChartPie } from "react-icons/fa";
+import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
+import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun } from "react-icons/fa";
 
 const SidebarContent = ({ onClose, ...rest }) => {
   return (
@@ -26,7 +26,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
   );
 };
 
-const Navbar = ({ onOpen, ...rest }) => {
+const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
   return (
     <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding={6} bg="teal.500" color="white" {...rest}>
       <IconButton size="md" icon={<FaBars />} aria-label={"Open Menu"} display={{ base: "inherit", md: "none" }} onClick={onOpen} />
@@ -34,6 +34,7 @@ const Navbar = ({ onOpen, ...rest }) => {
         React Dashboard
       </Heading>
       <Spacer />
+      <IconButton size="md" icon={colorMode === "light" ? <FaMoon /> : <FaSun />} aria-label={"Toggle Color Mode"} onClick={toggleColorMode} mr={5} />
       {/* You can add more nav items here */}
     </Flex>
   );
@@ -41,10 +42,11 @@ const Navbar = ({ onOpen, ...rest }) => {
 
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <>
-      <Navbar onOpen={onOpen} />
+      <Navbar onOpen={onOpen} toggleColorMode={toggleColorMode} colorMode={colorMode} />
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
