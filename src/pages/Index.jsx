@@ -58,28 +58,7 @@ const Index = () => {
         </DrawerContent>
       </Drawer>
       <Flex direction={{ base: "column", md: "row-reverse" }} transition=".3s ease">
-        <VStack spacing={4} p={8} flex="2" alignItems="flex-start" position="static" pt="100px">
-          <Box id="section1" p={5} shadow="md" borderWidth="1px" my={6}>
-            <Heading size="md">Section 1</Heading>
-            <Text mt={4}>Welcome to Section 1. Here's an introduction to our first topic.</Text>
-          </Box>
-          <Box id="section2" p={5} shadow="md" borderWidth="1px" my={6}>
-            <Heading size="md">Section 2</Heading>
-            <Text mt={4}>Welcome to Section 2. Let's dive into the second topic with this introduction.</Text>
-          </Box>
-          <Box id="section3" p={5} shadow="md" borderWidth="1px" my={6}>
-            <Heading size="md">Section 3</Heading>
-            <Text mt={4}>Welcome to Section 3. This introductory sentence will lead us into the third subject.</Text>
-          </Box>
-          <Box id="section4" p={5} shadow="md" borderWidth="1px" my={6}>
-            <Heading size="md">Section 4</Heading>
-            <Text mt={4}>Welcome to Section 4. Begin exploring the fourth subject with this introduction.</Text>
-          </Box>
-          <Box id="section5" p={5} shadow="md" borderWidth="1px" my={6}>
-            <Heading size="md">Section 5</Heading>
-            <Text mt={4}>Welcome to Section 5. Here is a brief introduction to our final topic.</Text>
-          </Box>
-        </VStack>
+        <VStack spacing={4} p={8} flex="2" alignItems="flex-start" position="static" pt="100px"></VStack>
         <VStack spacing={4} p={8} flex="1" alignItems="flex-start" position="fixed" right="0" top="75px" h="calc(100vh - 75px)">
           <Button
             variant="ghost"
