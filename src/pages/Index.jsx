@@ -57,8 +57,17 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start">
-        <VStack spacing={4} flex="1" alignItems="flex-start">
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start" justifyContent="space-between">
+        <Box flex="3">
+          <VStack spacing={8} alignItems="flex-start" id="section1">
+            <Heading as="h3" size="lg">
+              Section 1
+            </Heading>
+            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
+          </VStack>
+          {/* Additional sections would go here */}
+        </Box>
+        <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
           <Button
             variant="ghost"
             justifyContent="flex-start"
