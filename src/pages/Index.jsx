@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
 import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun } from "react-icons/fa";
 
-const SidebarContent = ({ onClose, ...rest }) => {
+const SidebarContent = ({ onClose, colorMode, ...rest }) => {
   return (
-    <Box transition="3s ease" bg="dark" w={{ base: "full", md: 60 }} pos="fixed" h="full" {...rest}>
+    <Box transition="3s ease" bg={colorMode === "light" ? "white" : "dark"} w={{ base: "full", md: 60 }} pos="fixed" h="full" {...rest}>
       <VStack align="flex-start" justify="center" h="100%" p={5} spacing={4} color="white">
         <Heading size="md" my={5}>
           Dashboard
@@ -53,7 +53,7 @@ const Index = () => {
           <DrawerCloseButton />
           <DrawerHeader borderBottomWidth="1px">Navigation</DrawerHeader>
           <DrawerBody>
-            <SidebarContent onClose={onClose} />
+            <SidebarContent onClose={onClose} colorMode={colorMode} />
           </DrawerBody>
         </DrawerContent>
       </Drawer>
