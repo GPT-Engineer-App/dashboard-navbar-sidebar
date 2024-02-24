@@ -116,7 +116,7 @@ const Index = () => {
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaHome />}
-            bg={activeSection === "section1" ? "gray.200" : undefined}
+            color={activeSection === "section1" ? "blue.500" : undefined}
             onClick={() => {
               const section = document.getElementById("section1");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -130,7 +130,7 @@ const Index = () => {
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaUser />}
-            bg={activeSection === "section2" ? "gray.200" : undefined}
+            color={activeSection === "section2" ? "blue.500" : undefined}
             onClick={() => {
               const section = document.getElementById("section2");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -144,7 +144,7 @@ const Index = () => {
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaCog />}
-            bg={activeSection === "section3" ? "gray.200" : undefined}
+            color={activeSection === "section3" ? "blue.500" : undefined}
             onClick={() => {
               const section = document.getElementById("section3");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -158,7 +158,7 @@ const Index = () => {
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaChartPie />}
-            bg={activeSection === "section4" ? "gray.200" : undefined}
+            color={activeSection === "section4" ? "blue.500" : undefined}
             onClick={() => {
               const section = document.getElementById("section4");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -172,7 +172,7 @@ const Index = () => {
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaChartPie />}
-            bg={activeSection === "section5" ? "gray.200" : undefined}
+            color={activeSection === "section5" ? "blue.500" : undefined}
             onClick={() => {
               const section = document.getElementById("section5");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
