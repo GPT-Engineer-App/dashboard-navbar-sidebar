@@ -60,7 +60,7 @@ const Index = () => {
       </Drawer>
       <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start">
         <Box flex="1">
-          <Box as="nav" pos="fixed" right="16px" top="120px" w="200px">
+          <Box as="nav" pos="sticky" right="16px" top="120px" w="200px">
             <VStack align="stretch" spacing={4} fontWeight="semibold">
               <Link href="#section1" onClick={onClose}>
                 Section 1
