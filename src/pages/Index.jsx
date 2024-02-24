@@ -123,23 +123,10 @@ const Index = () => {
                 <Text ml="2">Section 2</Text>
               </a>
             </li>
-            <li className={activeSection === "section3" ? "active" : ""} title="Section 3">
+            <li className={activeSection === "section3" ? "active" : ""}>
               <a href="#section3">
-                <FaUserFriends />
-                <Text ml="2">Section 3</Text>
+                <FaUserFriends title="Section 3" />
               </a>
-              <ul>
-                <li className={activeSection === "example-sub-A" ? "active" : ""}>
-                  <a href="#example-sub-A">
-                    <FaRegFileAlt />
-                  </a>
-                </li>
-                <li className={activeSection === "example-sub-B" ? "active" : ""}>
-                  <a href="#example-sub-B">
-                    <FaRegFileAlt />
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
         </nav>
