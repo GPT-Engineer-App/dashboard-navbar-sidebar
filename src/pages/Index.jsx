@@ -58,8 +58,17 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} alignItems="flex-start">
-        <Box flex="1" paddingRight="250px">
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start">
+        <Box flex="1">
+          <Box as="nav" pos="fixed" right="16px" top="120px" w="200px">
+            <VStack align="stretch" spacing={4}>
+              <Button onClick={() => document.getElementById("section1").scrollIntoView({ behavior: "smooth" })}>Section 1</Button>
+              <Button onClick={() => document.getElementById("section2").scrollIntoView({ behavior: "smooth" })}>Section 2</Button>
+              <Button onClick={() => document.getElementById("section3").scrollIntoView({ behavior: "smooth" })}>Section 3</Button>
+              <Button onClick={() => document.getElementById("section4").scrollIntoView({ behavior: "smooth" })}>Section 4</Button>
+              <Button onClick={() => document.getElementById("section5").scrollIntoView({ behavior: "smooth" })}>Section 5</Button>
+            </VStack>
+          </Box>
           <VStack spacing={8} alignItems="flex-start" id="section1">
             <Heading as="h3" size="lg">
               Section 1
