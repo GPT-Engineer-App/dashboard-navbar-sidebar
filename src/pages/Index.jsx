@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Scrollspy from "../components/Scrollspy";
 import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode, Link } from "@chakra-ui/react";
 import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun, FaBook, FaChartBar, FaUserFriends, FaRegFileAlt } from "react-icons/fa";
 
@@ -58,7 +59,8 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row-reverse" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
+        <Scrollspy />
         <Box flex="1" minW="0" order={{ md: 1 }}>
           <VStack spacing={8} alignItems="flex-start" id="section1">
             <Heading as="h3" size="lg">
