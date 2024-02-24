@@ -59,8 +59,8 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
-        <Box as="aside" position="sticky" top="0" h="calc(100vh - 100px)" w="200px" overflowY="auto">
+      <Flex direction={{ base: "column-reverse", md: "row-reverse" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
+        <Box as="aside" position="sticky" top="0" h="calc(100vh - 100px)" w="200px" overflowY="auto" order={{ base: 1, md: 2 }}>
           <Scrollspy />
         </Box>
         <Box as="main" flex="1" h="500px" overflowY="auto">
