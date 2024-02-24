@@ -64,7 +64,7 @@ const Index = () => {
           <Scrollspy />
         </Box>
         <Box as="main" flex="1" h="500px" overflowY="auto">
-          {/* Main content has been removed as per request */}
+          {/* Main content area is now empty */}
         </Box>
       </Flex>
     </>
