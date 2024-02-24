@@ -113,27 +113,27 @@ const Index = () => {
           <ul className="menu-sidebar">
             <li className={activeSection === "section1" ? "active" : ""}>
               <a href="#section1">
-                <FaBook /> Section 1
+                <FaBook />
               </a>
             </li>
             <li className={activeSection === "section2" ? "active" : ""}>
               <a href="#section2">
-                <FaChartBar /> Section 2
+                <FaChartBar />
               </a>
             </li>
             <li className={activeSection === "section3" ? "active" : ""}>
               <a href="#section3">
-                <FaUserFriends /> Section 3
+                <FaUserFriends />
               </a>
               <ul>
                 <li className={activeSection === "example-sub-A" ? "active" : ""}>
                   <a href="#example-sub-A">
-                    <FaRegFileAlt /> Subsection A
+                    <FaRegFileAlt />
                   </a>
                 </li>
                 <li className={activeSection === "example-sub-B" ? "active" : ""}>
                   <a href="#example-sub-B">
-                    <FaRegFileAlt /> Subsection B
+                    <FaRegFileAlt />
                   </a>
                 </li>
               </ul>
