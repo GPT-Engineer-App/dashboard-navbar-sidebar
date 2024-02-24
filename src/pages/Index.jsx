@@ -57,8 +57,8 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start" justifyContent="space-between">
-        <Box flex="3">
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} alignItems="flex-start">
+        <Box flex="1" paddingRight="250px">
           <VStack spacing={8} alignItems="flex-start" id="section1">
             <Heading as="h3" size="lg">
               Section 1
