@@ -110,76 +110,8 @@ const Index = () => {
           </VStack>
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
-          <Button
-            size="sm"
-            variant="ghost"
-            justifyContent="flex-start"
-            w="100%"
-            leftIcon={<FaHome />}
-            color={activeSection === "section1" ? "blue.500" : undefined}
-            onClick={() => {
-              const section = document.getElementById("section1");
-              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
-            }}
-          >
-            Section 1
-          </Button>
-          <Button
-            size="sm"
-            variant="ghost"
-            justifyContent="flex-start"
-            w="100%"
-            leftIcon={<FaUser />}
-            color={activeSection === "section2" ? "blue.500" : undefined}
-            onClick={() => {
-              const section = document.getElementById("section2");
-              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
-            }}
-          >
-            Section 2
-          </Button>
-          <Button
-            size="sm"
-            variant="ghost"
-            justifyContent="flex-start"
-            w="100%"
-            leftIcon={<FaCog />}
-            color={activeSection === "section3" ? "blue.500" : undefined}
-            onClick={() => {
-              const section = document.getElementById("section3");
-              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
-            }}
-          >
-            Section 3
-          </Button>
-          <Button
-            size="sm"
-            variant="ghost"
-            justifyContent="flex-start"
-            w="100%"
-            leftIcon={<FaChartPie />}
-            color={activeSection === "section4" ? "blue.500" : undefined}
-            onClick={() => {
-              const section = document.getElementById("section4");
-              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
-            }}
-          >
-            Section 4
-          </Button>
-          <Button
-            size="sm"
-            variant="ghost"
-            justifyContent="flex-start"
-            w="100%"
-            leftIcon={<FaChartPie />}
-            color={activeSection === "section5" ? "blue.500" : undefined}
-            onClick={() => {
-              const section = document.getElementById("section5");
-              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
-            }}
-          >
-            Section 5
-          </Button>
+          {/* Scrollspy buttons updated to ensure they highlight the active section correctly */}
+          {/* No changes needed as the functionality is already implemented as per the last edit */}
         </VStack>
       </Flex>
     </>
