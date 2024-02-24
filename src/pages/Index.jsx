@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
-import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun } from "react-icons/fa";
+import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun, FaBook, FaChartBar, FaUserFriends, FaRegFileAlt } from "react-icons/fa";
 
 const SidebarContent = ({ onClose, colorMode, ...rest }) => {
   return (
@@ -112,19 +112,29 @@ const Index = () => {
         <nav className="sticky top-0 pt-5">
           <ul className="menu-sidebar">
             <li className={activeSection === "section1" ? "active" : ""}>
-              <a href="#section1">Section 1</a>
+              <a href="#section1">
+                <FaBook /> Section 1
+              </a>
             </li>
             <li className={activeSection === "section2" ? "active" : ""}>
-              <a href="#section2">Section 2</a>
+              <a href="#section2">
+                <FaChartBar /> Section 2
+              </a>
             </li>
             <li className={activeSection === "section3" ? "active" : ""}>
-              <a href="#section3">Section 3</a>
+              <a href="#section3">
+                <FaUserFriends /> Section 3
+              </a>
               <ul>
                 <li className={activeSection === "example-sub-A" ? "active" : ""}>
-                  <a href="#example-sub-A">Subsection A</a>
+                  <a href="#example-sub-A">
+                    <FaRegFileAlt /> Subsection A
+                  </a>
                 </li>
                 <li className={activeSection === "example-sub-B" ? "active" : ""}>
-                  <a href="#example-sub-B">Subsection B</a>
+                  <a href="#example-sub-B">
+                    <FaRegFileAlt /> Subsection B
+                  </a>
                 </li>
               </ul>
             </li>
