@@ -151,15 +151,6 @@ const Index = () => {
           >
             Section 5
           </Button>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaCog />} onClick={() => document.getElementById("section3").scrollIntoView()}>
-            Section 3
-          </Button>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />} onClick={() => document.getElementById("section4").scrollIntoView()}>
-            Section 4
-          </Button>
-          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />} onClick={() => document.getElementById("section5").scrollIntoView()}>
-            Section 5
-          </Button>
         </VStack>
       </Flex>
     </>
