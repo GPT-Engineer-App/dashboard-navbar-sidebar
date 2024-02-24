@@ -58,12 +58,22 @@ const Index = () => {
         </DrawerContent>
       </Drawer>
       <Box ml={{ base: 0, md: 60 }} transition=".3s ease">
-        <Flex as="header" align="center" justify="space-between" wrap="wrap" w="100%" mb={8} p={8} bg="dark" color="white" shadow="lg">
-          <Text>Welcome to your Dashboard</Text>
-          {/* Header Content goes here */}
-        </Flex>
         {/* Main Content goes here */}
-        <Box p={8}>{/* The rest of your page content goes here */}</Box>
+        <VStack spacing={4} p={8}>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />}>
+            Section 1
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaUser />}>
+            Section 2
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaCog />}>
+            Section 3
+          </Button>
+          <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />}>
+            Section 4
+          </Button>
+          {/* Additional sections can be added here */}
+        </VStack>
       </Box>
     </>
   );
