@@ -65,7 +65,30 @@ const Index = () => {
             </Heading>
             <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
-          {/* Additional sections would go here */}
+          <VStack spacing={8} alignItems="flex-start" id="section2">
+            <Heading as="h3" size="lg">
+              Section 2
+            </Heading>
+            <Text fontSize="md">Content for section 2...</Text>
+          </VStack>
+          <VStack spacing={8} alignItems="flex-start" id="section3">
+            <Heading as="h3" size="lg">
+              Section 3
+            </Heading>
+            <Text fontSize="md">Content for section 3...</Text>
+          </VStack>
+          <VStack spacing={8} alignItems="flex-start" id="section4">
+            <Heading as="h3" size="lg">
+              Section 4
+            </Heading>
+            <Text fontSize="md">Content for section 4...</Text>
+          </VStack>
+          <VStack spacing={8} alignItems="flex-start" id="section5">
+            <Heading as="h3" size="lg">
+              Section 5
+            </Heading>
+            <Text fontSize="md">Content for section 5...</Text>
+          </VStack>
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
           <Button
