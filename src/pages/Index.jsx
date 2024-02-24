@@ -105,6 +105,42 @@ const Index = () => {
           >
             Section 2
           </Button>
+          <Button
+            variant="ghost"
+            justifyContent="flex-start"
+            w="100%"
+            leftIcon={<FaCog />}
+            onClick={() => {
+              const section = document.getElementById("section3");
+              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+            }}
+          >
+            Section 3
+          </Button>
+          <Button
+            variant="ghost"
+            justifyContent="flex-start"
+            w="100%"
+            leftIcon={<FaChartPie />}
+            onClick={() => {
+              const section = document.getElementById("section4");
+              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+            }}
+          >
+            Section 4
+          </Button>
+          <Button
+            variant="ghost"
+            justifyContent="flex-start"
+            w="100%"
+            leftIcon={<FaChartPie />}
+            onClick={() => {
+              const section = document.getElementById("section5");
+              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+            }}
+          >
+            Section 5
+          </Button>
           <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaCog />} onClick={() => document.getElementById("section3").scrollIntoView()}>
             Section 3
           </Button>
