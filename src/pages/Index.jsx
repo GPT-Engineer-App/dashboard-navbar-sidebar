@@ -46,8 +46,8 @@ const Index = () => {
 
   return (
     <>
-      <Navbar onOpen={onOpen} toggleColorMode={toggleColorMode} colorMode={colorMode} />
-      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+      <Navbar position="fixed" width="100%" zIndex={1} onOpen={onOpen} toggleColorMode={toggleColorMode} colorMode={colorMode} />
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose} pt="60px">
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
@@ -57,8 +57,8 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row" }} transition=".3s ease">
-        <VStack spacing={4} p={8} flex="2">
+      <Flex direction={{ base: "column", md: "row-reverse" }} transition=".3s ease">
+        <VStack spacing={4} p={8} flex="2" alignItems="flex-start" position="static">
           <Box id="section1" p={5} shadow="md" borderWidth="1px">
             <Heading size="md">Section 1</Heading>
             <Text mt={4}>Content for section 1...</Text>
@@ -80,7 +80,7 @@ const Index = () => {
             <Text mt={4}>Content for section 5...</Text>
           </Box>
         </VStack>
-        <VStack spacing={4} p={8} flex="1" alignItems="flex-start" position="fixed">
+        <VStack spacing={4} p={8} flex="1" alignItems="flex-start" position="static">
           <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaHome />} onClick={() => document.getElementById("section1").scrollIntoView()}>
             Section 1
           </Button>
