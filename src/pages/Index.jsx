@@ -88,7 +88,7 @@ const Index = () => {
             leftIcon={<FaHome />}
             onClick={() => {
               const section = document.getElementById("section1");
-              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
             }}
           >
             Section 1
@@ -100,7 +100,7 @@ const Index = () => {
             leftIcon={<FaUser />}
             onClick={() => {
               const section = document.getElementById("section2");
-              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
             }}
           >
             Section 2
@@ -112,7 +112,7 @@ const Index = () => {
             leftIcon={<FaCog />}
             onClick={() => {
               const section = document.getElementById("section3");
-              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
             }}
           >
             Section 3
@@ -124,7 +124,7 @@ const Index = () => {
             leftIcon={<FaChartPie />}
             onClick={() => {
               const section = document.getElementById("section4");
-              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
             }}
           >
             Section 4
@@ -136,7 +136,7 @@ const Index = () => {
             leftIcon={<FaChartPie />}
             onClick={() => {
               const section = document.getElementById("section5");
-              window.scrollTo({ top: section.offsetTop - 75, behavior: "smooth" });
+              window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
             }}
           >
             Section 5
