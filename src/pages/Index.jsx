@@ -111,27 +111,27 @@ const Index = () => {
         </Box>
         <nav className="sticky top-0 pt-5">
           <ul className="menu-sidebar">
-            <li style={{ display: "none" }} className={activeSection === "section1" ? "active" : ""}>
+            <li className={activeSection === "section1" ? "active" : ""}>
               <a href="#section1">
                 <FaBook /> Section 1
               </a>
             </li>
-            <li style={{ display: "none" }} className={activeSection === "section2" ? "active" : ""}>
+            <li className={activeSection === "section2" ? "active" : ""}>
               <a href="#section2">
                 <FaChartBar /> Section 2
               </a>
             </li>
-            <li style={{ display: "none" }} className={activeSection === "section3" ? "active" : ""}>
+            <li className={activeSection === "section3" ? "active" : ""}>
               <a href="#section3">
                 <FaUserFriends /> Section 3
               </a>
               <ul>
-                <li style={{ display: "none" }} className={activeSection === "example-sub-A" ? "active" : ""}>
+                <li className={activeSection === "example-sub-A" ? "active" : ""}>
                   <a href="#example-sub-A">
                     <FaRegFileAlt /> Subsection A
                   </a>
                 </li>
-                <li style={{ display: "none" }} className={activeSection === "example-sub-B" ? "active" : ""}>
+                <li className={activeSection === "example-sub-B" ? "active" : ""}>
                   <a href="#example-sub-B">
                     <FaRegFileAlt /> Subsection B
                   </a>
