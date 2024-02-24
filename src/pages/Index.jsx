@@ -57,9 +57,8 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row-reverse" }} transition=".3s ease">
-        <VStack spacing={4} p={8} flex="2" alignItems="flex-start" position="static" pt="100px"></VStack>
-        <VStack spacing={4} p={8} flex="1" alignItems="flex-start" position="fixed" right="0" top="75px" h="calc(100vh - 75px)">
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start">
+        <VStack spacing={4} flex="1" alignItems="flex-start">
           <Button
             variant="ghost"
             justifyContent="flex-start"
