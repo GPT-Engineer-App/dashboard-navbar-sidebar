@@ -72,7 +72,27 @@ const Index = () => {
           <Button variant="ghost" justifyContent="flex-start" w="100%" leftIcon={<FaChartPie />}>
             Section 4
           </Button>
-          {/* Additional sections can be added here */}
+          <Box id="section1" p={5} shadow="md" borderWidth="1px">
+            <Heading size="md">Section 1</Heading>
+            <Text mt={4}>Content for section 1...</Text>
+          </Box>
+          <Box id="section2" p={5} shadow="md" borderWidth="1px" my={6}>
+            <Heading size="md">Section 2</Heading>
+            <Text mt={4}>Content for section 2...</Text>
+          </Box>
+          <Box id="section3" p={5} shadow="md" borderWidth="1px" my={6}>
+            <Heading size="md">Section 3</Heading>
+            <Text mt={4}>Content for section 3...</Text>
+          </Box>
+          <Box id="section4" p={5} shadow="md" borderWidth="1px" my={6}>
+            <Heading size="md">Section 4</Heading>
+            <Text mt={4}>Content for section 4...</Text>
+          </Box>
+          <Box id="section5" p={5} shadow="md" borderWidth="1px" my={6}>
+            <Heading size="md">Section 5</Heading>
+            <Text mt={4}>Content for section 5...</Text>
+          </Box>
+          {/* Scrollspy can be tested with these sections */}
         </VStack>
       </Box>
     </>
