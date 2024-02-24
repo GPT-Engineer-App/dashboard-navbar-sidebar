@@ -29,7 +29,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
 const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
   return (
     <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding={6} bg="teal.500" color="white" {...rest}>
-      <IconButton size="md" icon={<FaBars />} aria-label={"Open Menu"} display={{ base: "inherit", md: "none" }} onClick={onOpen} />
+      <IconButton size="md" icon={<FaBars />} aria-label={"Open Menu"} display="inherit" onClick={onOpen} />
       <Heading as="h1" size="lg" letterSpacing={"tighter"}>
         React Dashboard
       </Heading>
