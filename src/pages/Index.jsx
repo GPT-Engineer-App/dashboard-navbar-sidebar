@@ -110,11 +110,23 @@ const Index = () => {
           </VStack>
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
-          {["section1", "section2", "section3", "section4", "section5"].map((section) => (
-            <Button key={section} size="sm" colorScheme={activeSection === section ? "blue" : "gray"} onClick={() => document.getElementById(section).scrollIntoView({ behavior: "smooth" })}>
-              {section.toUpperCase()}
+          <Button size="sm" colorScheme={activeSection === "section1" ? "blue" : "gray"} onClick={() => document.getElementById("section1").scrollIntoView({ behavior: "smooth" })}>
+            Section 1
+          </Button>
+          <Button size="sm" colorScheme={activeSection === "section2" ? "blue" : "gray"} onClick={() => document.getElementById("section2").scrollIntoView({ behavior: "smooth" })}>
+            Section 2
+          </Button>
+          <Button size="sm" colorScheme={activeSection === "section3" ? "blue" : "gray"} onClick={() => document.getElementById("section3").scrollIntoView({ behavior: "smooth" })}>
+            Section 3
+          </Button>
+          <VStack spacing={2} pl={3}>
+            <Button size="sm" colorScheme={activeSection === "example-sub-A" ? "blue" : "gray"} onClick={() => document.getElementById("example-sub-A").scrollIntoView({ behavior: "smooth" })}>
+              Subsection A
             </Button>
-          ))}
+            <Button size="sm" colorScheme={activeSection === "example-sub-B" ? "blue" : "gray"} onClick={() => document.getElementById("example-sub-B").scrollIntoView({ behavior: "smooth" })}>
+              Subsection B
+            </Button>
+          </VStack>
         </VStack>
       </Flex>
     </>
