@@ -63,31 +63,31 @@ const Index = () => {
             <Heading as="h3" size="lg">
               Section 1
             </Heading>
-            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
+            <Text fontSize="md">Section 1 contains an overview of the dashboard's main features and functionalities.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section2">
             <Heading as="h3" size="lg">
               Section 2
             </Heading>
-            <Text fontSize="md">Content for section 2...</Text>
+            <Text fontSize="md">In Section 2, we dive into user profiles and how to manage user settings within the dashboard.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section3">
             <Heading as="h3" size="lg">
               Section 3
             </Heading>
-            <Text fontSize="md">Content for section 3...</Text>
+            <Text fontSize="md">Section 3 is all about customization options, allowing users to tailor the dashboard to their individual preferences.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section4">
             <Heading as="h3" size="lg">
               Section 4
             </Heading>
-            <Text fontSize="md">Content for section 4...</Text>
+            <Text fontSize="md">Analytics and reporting are covered in Section 4, with insights into data visualization tools.</Text>
           </VStack>
           <VStack spacing={8} alignItems="flex-start" id="section5">
             <Heading as="h3" size="lg">
               Section 5
             </Heading>
-            <Text fontSize="md">Content for section 5...</Text>
+            <Text fontSize="md">Finally, Section 5 provides resources and documentation to help users make the most of the dashboard.</Text>
           </VStack>
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
