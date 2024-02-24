@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
 import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun } from "react-icons/fa";
 
@@ -41,6 +41,25 @@ const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
 };
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState("section1");
+
+  const handleScroll = () => {
+    const sections = ["section1", "section2", "section3", "section4", "section5"];
+    const currentSection = sections.find((section) => {
+      const element = document.getElementById(section);
+      return element.getBoundingClientRect().top <= 100;
+    });
+    if (currentSection && activeSection !== currentSection) {
+      setActiveSection(currentSection);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [activeSection]);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -92,10 +111,12 @@ const Index = () => {
         </Box>
         <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
           <Button
+            size="sm"
             variant="ghost"
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaHome />}
+            bg={activeSection === "section1" ? "gray.200" : undefined}
             onClick={() => {
               const section = document.getElementById("section1");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -104,10 +125,12 @@ const Index = () => {
             Section 1
           </Button>
           <Button
+            size="sm"
             variant="ghost"
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaUser />}
+            bg={activeSection === "section2" ? "gray.200" : undefined}
             onClick={() => {
               const section = document.getElementById("section2");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -116,10 +139,12 @@ const Index = () => {
             Section 2
           </Button>
           <Button
+            size="sm"
             variant="ghost"
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaCog />}
+            bg={activeSection === "section3" ? "gray.200" : undefined}
             onClick={() => {
               const section = document.getElementById("section3");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -128,10 +153,12 @@ const Index = () => {
             Section 3
           </Button>
           <Button
+            size="sm"
             variant="ghost"
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaChartPie />}
+            bg={activeSection === "section4" ? "gray.200" : undefined}
             onClick={() => {
               const section = document.getElementById("section4");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
@@ -140,10 +167,12 @@ const Index = () => {
             Section 4
           </Button>
           <Button
+            size="sm"
             variant="ghost"
             justifyContent="flex-start"
             w="100%"
             leftIcon={<FaChartPie />}
+            bg={activeSection === "section5" ? "gray.200" : undefined}
             onClick={() => {
               const section = document.getElementById("section5");
               window.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
