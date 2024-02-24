@@ -109,25 +109,27 @@ const Index = () => {
             <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
         </Box>
-        <VStack spacing={4} flex="1" alignItems="flex-start" position="fixed" right="0" top="100px">
-          <Button size="sm" colorScheme={activeSection === "section1" ? "blue" : "gray"} onClick={() => document.getElementById("section1").scrollIntoView({ behavior: "smooth" })}>
-            Section 1
-          </Button>
-          <Button size="sm" colorScheme={activeSection === "section2" ? "blue" : "gray"} onClick={() => document.getElementById("section2").scrollIntoView({ behavior: "smooth" })}>
-            Section 2
-          </Button>
-          <Button size="sm" colorScheme={activeSection === "section3" ? "blue" : "gray"} onClick={() => document.getElementById("section3").scrollIntoView({ behavior: "smooth" })}>
-            Section 3
-          </Button>
-          <VStack spacing={2} pl={3}>
-            <Button size="sm" colorScheme={activeSection === "example-sub-A" ? "blue" : "gray"} onClick={() => document.getElementById("example-sub-A").scrollIntoView({ behavior: "smooth" })}>
-              Subsection A
-            </Button>
-            <Button size="sm" colorScheme={activeSection === "example-sub-B" ? "blue" : "gray"} onClick={() => document.getElementById("example-sub-B").scrollIntoView({ behavior: "smooth" })}>
-              Subsection B
-            </Button>
-          </VStack>
-        </VStack>
+        <nav className="sticky top-0 pt-5">
+          <ul className="menu-sidebar">
+            <li className={activeSection === "section1" ? "active" : ""}>
+              <a href="#section1">Section 1</a>
+            </li>
+            <li className={activeSection === "section2" ? "active" : ""}>
+              <a href="#section2">Section 2</a>
+            </li>
+            <li className={activeSection === "section3" ? "active" : ""}>
+              <a href="#section3">Section 3</a>
+              <ul>
+                <li className={activeSection === "example-sub-A" ? "active" : ""}>
+                  <a href="#example-sub-A">Subsection A</a>
+                </li>
+                <li className={activeSection === "example-sub-B" ? "active" : ""}>
+                  <a href="#example-sub-B">Subsection B</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </Flex>
     </>
   );
