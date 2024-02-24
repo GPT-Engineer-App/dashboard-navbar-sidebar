@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, Heading, IconButton, Spacer, VStack, Text, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, useColorMode, Link } from "@chakra-ui/react";
 import { FaBars, FaHome, FaUser, FaCog, FaChartPie, FaMoon, FaSun, FaBook, FaChartBar, FaUserFriends, FaRegFileAlt } from "react-icons/fa";
 
 const SidebarContent = ({ onClose, colorMode, ...rest }) => {
@@ -62,11 +62,21 @@ const Index = () => {
         <Box flex="1">
           <Box as="nav" pos="fixed" right="16px" top="120px" w="200px">
             <VStack align="stretch" spacing={4} fontWeight="semibold">
-              <Text>Section 1</Text>
-              <Text>Section 2</Text>
-              <Text>Section 3</Text>
-              <Text>Section 4</Text>
-              <Text>Section 5</Text>
+              <Link href="#section1" onClick={onClose}>
+                Section 1
+              </Link>
+              <Link href="#section2" onClick={onClose}>
+                Section 2
+              </Link>
+              <Link href="#section3" onClick={onClose}>
+                Section 3
+              </Link>
+              <Link href="#section4" onClick={onClose}>
+                Section 4
+              </Link>
+              <Link href="#section5" onClick={onClose}>
+                Section 5
+              </Link>
             </VStack>
           </Box>
           <VStack spacing={8} alignItems="flex-start" id="section1">
