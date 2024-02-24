@@ -41,25 +41,7 @@ const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
 };
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState("section1");
-
-  const handleScroll = () => {
-    const sections = ["section1", "section2", "section3", "section4", "section5"];
-    const currentSection = sections.find((section) => {
-      const element = document.getElementById(section);
-      return element.getBoundingClientRect().top <= 100;
-    });
-    if (currentSection && activeSection !== currentSection) {
-      setActiveSection(currentSection);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [activeSection]);
+  // Scrollspy related states, effect and function have been removed as they are no longer needed.
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -109,27 +91,7 @@ const Index = () => {
             <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
         </Box>
-        <nav className="sticky top-0 pt-5">
-          <ul className="menu-sidebar">
-            <li className={activeSection === "section1" ? "active" : ""} title="Section 1">
-              <a href="#section1">
-                <FaBook />
-                <Text ml="2">Section 1</Text>
-              </a>
-            </li>
-            <li className={activeSection === "section2" ? "active" : ""} title="Section 2">
-              <a href="#section2">
-                <FaChartBar />
-                <Text ml="2">Section 2</Text>
-              </a>
-            </li>
-            <li className={activeSection === "section3" ? "active" : ""}>
-              <a href="#section3">
-                <FaUserFriends title="Section 3" />
-              </a>
-            </li>
-          </ul>
-        </nav>
+        // Scrollspy navigation has been removed as per the update request.
       </Flex>
     </>
   );
