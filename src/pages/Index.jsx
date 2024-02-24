@@ -35,7 +35,7 @@ const Navbar = ({ onOpen, toggleColorMode, colorMode, ...rest }) => {
       </Heading>
       <Spacer />
       <IconButton size="md" icon={colorMode === "light" ? <FaMoon /> : <FaSun />} aria-label={"Toggle Color Mode"} onClick={toggleColorMode} mr={5} />
-      {/* You can add more nav items here */}
+      <IconButton size="md" icon={<FaUser />} aria-label={"User Profile"} mr={5} />
     </Flex>
   );
 };
