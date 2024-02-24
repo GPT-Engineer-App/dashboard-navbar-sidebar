@@ -60,39 +60,7 @@ const Index = () => {
         </DrawerContent>
       </Drawer>
       <Flex direction={{ base: "column", md: "row" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
-        <Scrollspy />
-        <Box flex="1" minW="0" order={{ md: 1 }}>
-          <VStack spacing={8} alignItems="flex-start" id="section1">
-            <Heading as="h3" size="lg">
-              Section 1
-            </Heading>
-            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
-          </VStack>
-          <VStack spacing={8} alignItems="flex-start" id="section2">
-            <Heading as="h3" size="lg">
-              Section 2
-            </Heading>
-            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
-          </VStack>
-          <VStack spacing={8} alignItems="flex-start" id="section3">
-            <Heading as="h3" size="lg">
-              Section 3
-            </Heading>
-            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
-          </VStack>
-          <VStack spacing={8} alignItems="flex-start" id="section4">
-            <Heading as="h3" size="lg">
-              Section 4
-            </Heading>
-            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
-          </VStack>
-          <VStack spacing={8} alignItems="flex-start" id="section5">
-            <Heading as="h3" size="lg">
-              Section 5
-            </Heading>
-            <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
-          </VStack>
-        </Box>
+        {/* Content has been deleted as per update request */}
       </Flex>
     </>
   );
