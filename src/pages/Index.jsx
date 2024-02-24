@@ -100,7 +100,6 @@ const Index = () => {
             <Text fontSize="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus quisquam obcaecati et reiciendis quaerat accusamus numquam.</Text>
           </VStack>
         </Box>
-        // Scrollspy navigation has been removed as per the update request.
       </Flex>
     </>
   );
