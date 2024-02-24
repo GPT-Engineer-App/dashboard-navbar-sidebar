@@ -58,9 +58,9 @@ const Index = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Flex direction={{ base: "column", md: "row" }} pt="100px" pl={8} pr={8} alignItems="flex-start">
-        <Box flex="1">
-          <Box as="nav" pos="sticky" right="16px" top="120px" w="200px">
+      <Flex direction={{ base: "column", md: "row" }} pt="100px" px={8} alignItems="flex-start" justify="space-between">
+        <Box flex="1" minW="0">
+          <Box as="nav" pos="sticky" left="auto" right="16px" top="120px" w="200px">
             <VStack align="stretch" spacing={4} fontWeight="semibold">
               <Link href="#section1" onClick={onClose}>
                 Section 1
